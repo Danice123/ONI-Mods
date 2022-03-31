@@ -15,7 +15,7 @@ namespace Fermenter {
 				id: Id,
 				width: 2,
 				height: 2,
-				anim: "compost_kanim",
+				anim: "fermenter_kanim",
 				hitpoints: BUILDINGS.HITPOINTS.TIER1,
 				construction_time: BUILDINGS.CONSTRUCTION_TIME_SECONDS.TIER1,
 				construction_mass: BUILDINGS.CONSTRUCTION_MASS_KG.TIER2,
@@ -25,6 +25,7 @@ namespace Fermenter {
 				decor: BUILDINGS.DECOR.PENALTY.TIER3,
 				noise: NOISE_POLLUTION.NONE);
             BuildingTemplates.CreateElectricalBuildingDef(buildingDef);
+            buildingDef.DefaultAnimState = "on";
             buildingDef.AudioCategory = "HollowMetal";
             buildingDef.ViewMode = OverlayModes.LiquidConduits.ID;
             buildingDef.OutputConduitType = ConduitType.Liquid;
