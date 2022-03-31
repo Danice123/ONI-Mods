@@ -7,8 +7,8 @@ namespace Fermenter {
     public class FermenterConfig : IBuildingConfig {
         public static string Id = "EthanolFermenter";
 		public const string DisplayName = "Ethanol Fermenter";
-		public static string Description = "Some sorta description";
-		public const string Effect = "Can make the ethanols.";
+		public const string Effect = "Turns food into ethanol.";
+        public static string Description = "Now your food won't have to go to waste.";
 
         public override BuildingDef CreateBuildingDef() {
 			var buildingDef = BuildingTemplates.CreateBuildingDef(
