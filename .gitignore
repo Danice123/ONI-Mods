@@ -3,3 +3,4 @@ bin
 CaiLib
 decompiled
 obj
+*.autosave.scml
