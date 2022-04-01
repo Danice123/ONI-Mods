@@ -25,7 +25,6 @@ namespace Fermenter {
 				decor: BUILDINGS.DECOR.PENALTY.TIER3,
 				noise: NOISE_POLLUTION.NONE);
             BuildingTemplates.CreateElectricalBuildingDef(buildingDef);
-            buildingDef.DefaultAnimState = "on";
             buildingDef.AudioCategory = "HollowMetal";
             buildingDef.ViewMode = OverlayModes.LiquidConduits.ID;
             buildingDef.OutputConduitType = ConduitType.Liquid;
