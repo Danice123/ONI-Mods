@@ -1,17 +1,18 @@
-using CaiLib.Utils;
 using HarmonyLib;
-using static CaiLib.Utils.BuildingUtils;
-using static CaiLib.Utils.StringUtils;
+using STRINGS;
+using TUNING;
 
 namespace Fermenter {
 	public static class FermenterPatches {
 		[HarmonyPatch(typeof(GeneratedBuildings))]
 		[HarmonyPatch(nameof(GeneratedBuildings.LoadGeneratedBuildings))]
 		public static class GeneratedBuildings_LoadGeneratedBuildings_Patch{
-			public static void Prefix()
-			{
-				AddBuildingStrings(FermenterConfig.Id, FermenterConfig.DisplayName, FermenterConfig.Description, FermenterConfig.Effect);
-				AddBuildingToPlanScreen(GameStrings.PlanMenuCategory.Refinement, FermenterConfig.Id);
+			public static void Prefix() {
+				Strings.Add($"STRINGS.BUILDINGS.PREFABS.{FermenterConfig.Id.ToUpperInvariant()}.NAME", UI.FormatAsLink(FermenterConfig.DisplayName, FermenterConfig.Id));
+            	Strings.Add($"STRINGS.BUILDINGS.PREFABS.{FermenterConfig.Id.ToUpperInvariant()}.DESC", FermenterConfig.Description);
+            	Strings.Add($"STRINGS.BUILDINGS.PREFABS.{FermenterConfig.Id.ToUpperInvariant()}.EFFECT", FermenterConfig.Effect);
+
+				ModUtil.AddBuildingToPlanScreen("Refining", FermenterConfig.Id);
 			}
 		}
 
@@ -19,7 +20,7 @@ namespace Fermenter {
 		[HarmonyPatch("Initialize")]
 		public static class Db_Initialize_Patch{
 			public static void Postfix() {
-				AddBuildingToTechnology(GameStrings.Technology.Food.FoodRepurposing, FermenterConfig.Id);
+				Db.Get().Techs.Get("FoodRepurposing").unlockedItemIDs.Add(FermenterConfig.Id);
 			}
 		}
 	}
