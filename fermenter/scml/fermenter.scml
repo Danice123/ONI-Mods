@@ -16,7 +16,7 @@
         <file id="12" name="EF_Glow_High_0.png" width="2133" height="2133" pivot_x="0" pivot_y="1"/>
         <file id="13" name="idle_0.png" width="1024" height="1024" pivot_x="0" pivot_y="1"/>
         <file id="14" name="place_0.png" width="1024" height="1024" pivot_x="0" pivot_y="1"/>
-        <file id="15" name="ui_0.png" width="1024" height="1024" pivot_x="0" pivot_y="1"/>
+        <file id="15" name="ui_0.png" width="140" height="140" pivot_x="0" pivot_y="1"/>
     </folder>
     <entity id="0" name="fermenter">
         <animation id="0" name="on" length="1000" interval="100">
@@ -284,7 +284,7 @@
             </mainline>
             <timeline id="0" name="place_0">
                 <key id="0" spin="0">
-                    <object folder="0" file="14" x="-376" y="431" angle="0" scale_x="0.66" scale_y="0.66"/>
+                    <object folder="0" file="14" x="-326" y="431" angle="0" scale_x="0.66" scale_y="0.66"/>
                 </key>
             </timeline>
         </animation>
@@ -296,7 +296,7 @@
             </mainline>
             <timeline id="0" name="ui_0">
                 <key id="0" spin="0">
-                    <object folder="0" file="15" x="-376" y="431" angle="0" scale_x="0.66" scale_y="0.66"/>
+                    <object folder="0" file="15" x="-46" y="48" angle="0" scale_x="0.66" scale_y="0.66"/>
                 </key>
             </timeline>
         </animation>
