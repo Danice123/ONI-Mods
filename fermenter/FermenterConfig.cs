@@ -13,7 +13,7 @@ namespace Fermenter {
         public override BuildingDef CreateBuildingDef() {
 			var buildingDef = BuildingTemplates.CreateBuildingDef(
 				id: Id,
-				width: 2,
+				width: 3,
 				height: 2,
 				anim: "fermenter_kanim",
 				hitpoints: BUILDINGS.HITPOINTS.TIER1,
