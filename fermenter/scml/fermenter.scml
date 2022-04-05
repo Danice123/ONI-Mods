@@ -55,9 +55,9 @@
                 </key>
             </timeline>
         </animation>
-        <animation id="3" name="working_loop" length="1800" interval="33">
+        <animation id="3" name="working_loop" length="1419" interval="33">
             <mainline>
-                <key id="0">
+                <key id="0" time="0">
                     <object_ref id="0" timeline="0" key="0" z_index="0"/>
                     <object_ref id="1" timeline="4" key="6" z_index="1"/>
                     <object_ref id="2" timeline="3" key="6" z_index="2"/>
@@ -191,12 +191,12 @@
                 </key>
             </mainline>
             <timeline id="0" name="EF_Main_0">
-                <key id="0" time="231" spin="0">
+                <key id="0" time="0" spin="0">
                     <object folder="0" file="0" x="-1083.015873" y="1070.634921" angle="0"/>
                 </key>
             </timeline>
             <timeline id="1" name="EF_Pipe_1_0">
-                <key id="0" time="231" spin="0">
+                <key id="0" time="0" spin="0">
                     <object folder="0" file="1" x="-952.062075" y="1107.973677" angle="0"/>
                 </key>
                 <key id="1" time="363" spin="0">
@@ -222,7 +222,7 @@
                 </key>
             </timeline>
             <timeline id="2" name="EF_Pipe_2_0">
-                <key id="0" time="231" spin="0">
+                <key id="0" time="0" spin="0">
                     <object folder="0" file="2" x="-959.067086" y="1152.358491" angle="0"/>
                 </key>
                 <key id="1" time="363" spin="0">
@@ -248,7 +248,7 @@
                 </key>
             </timeline>
             <timeline id="3" name="EF_Pipe_3_0">
-                <key id="0" time="231" spin="0">
+                <key id="0" time="0" spin="0">
                     <object folder="0" file="3" x="-954.791044" y="1190.447051" angle="0"/>
                 </key>
                 <key id="1" time="363" spin="0">
@@ -271,7 +271,7 @@
                 </key>
             </timeline>
             <timeline id="4" name="EF_Pipe_Final_0">
-                <key id="0" time="231" spin="0">
+                <key id="0" time="0" spin="0">
                     <object folder="0" file="4" x="-916.515797" y="1196.789577" angle="0"/>
                 </key>
                 <key id="1" time="363" spin="0">
@@ -294,7 +294,7 @@
                 </key>
             </timeline>
             <timeline id="5" name="EF_Connector_0">
-                <key id="0" time="99" spin="0">
+                <key id="0" time="0" spin="0">
                     <object folder="0" file="5" x="-995.740488" y="1096.969697" angle="0"/>
                 </key>
                 <key id="1" time="231" spin="0">
@@ -305,7 +305,7 @@
                 </key>
             </timeline>
             <timeline id="6" name="EF_Tank_0">
-                <key id="0" time="231" spin="0">
+                <key id="0" time="0" spin="0">
                     <object folder="0" file="6" x="-879.234973" y="1150.455373" angle="0"/>
                 </key>
             </timeline>
