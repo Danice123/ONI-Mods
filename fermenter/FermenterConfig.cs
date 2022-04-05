@@ -2,6 +2,8 @@ using TUNING;
 using UnityEngine;
 using System.Collections.Generic;
 
+// heat building until 25 C then turn off power E.G. fridge
+
 namespace Fermenter {
 
     public class FermenterConfig : IBuildingConfig {
