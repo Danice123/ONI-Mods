@@ -9,4 +9,4 @@ deploy:
 	cp -R anim ~/".config/unity3d/Klei/Oxygen Not Included/mods/Dev/Fermenter/" -v
 
 build-anim:
-	kanimal-cli kanim fermenter.scml --output anim/assets/fermenter --interpolate
+	kanimal-cli kanim scml/fermenter.scml --output anim/assets/fermenter -i
