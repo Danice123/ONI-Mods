@@ -5,12 +5,6 @@ VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fermenter", "fermenter\fermenter.csproj", "{7141E7D6-34F2-423D-9714-49D69A443FA0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "decompiled", "decompiled\decompiled.csproj", "{00FCD63F-C769-46BF-8989-32B7BB9B5DCF}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "^CaiLib", "CaiLib\^CaiLib.csproj", "{2DED5B57-FD32-4F67-88B5-924AC4300952}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaiLib", "CaiLib\CaiLib.csproj", "{62C8279A-95FC-48E2-AE84-6EE0CE41DB3D}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
